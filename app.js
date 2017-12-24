@@ -69,12 +69,6 @@ app.use(function (req, res, next) {
     next();
 });
 
-// middleware
-// app.use(function (req, res, next) {
-//     // console.log(Date.now());
-//     next();
-// });
-
 // Index route
 app.get('/', (req, res) => {
     if (req.isAuthenticated()) {

@@ -1,13 +1,13 @@
 {{#each notes}}
-    <div class="card card-body mb-2">
-        <h4>{{title}}</h4>
-        <p>{{details}}</p>
-        <a class="btn btn-dark btn-block mb-2" href="/notes/edit/{{id}}">Edit</a>
-        <form method="post" action="/notes/{{id}}?_method=DELETE">
-            <input type="hidden" name="_method" value="DELETE">
-            <input type="submit" class="btn btn-danger btn-block" value="Delete">
-        </form>
-    </div>
+<div class="card card-body mb-2">
+    <h4>{{title}}</h4>
+    <p>{{details}}</p>
+    <a class="btn btn-dark btn-block mb-2" href="/notes/edit/{{id}}">Edit</a>
+    <form method="post" action="/notes/{{id}}?_method=DELETE">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" class="btn btn-danger btn-block" value="Delete">
+    </form>
+</div>
 {{else}}
 <div class="jumbotron text-center">
     <h1 class="display-3">{{title}}</h1>
